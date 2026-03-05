@@ -1,5 +1,29 @@
 [project]
 name = "pry"
-version = "1.0.0"
+version = "1.0.1"
 description = "A fast, native JSON viewer"
 entry = "src/main.ts"
+
+[app]
+name = "Pry"
+version = "1.0.1"
+build_number = 26
+entry = "src/main.ts"
+icons.source = "assets/icon_1024.png"
+
+[ios]
+bundle_id = "com.skelpo.pry"
+deployment_target = "17.0"
+distribute = "appstore"
+entry = "src/main_ios.ts"
+
+[macos]
+bundle_id = "com.skelpo.pry"
+minimum_os = "13.0"
+distribute = "appstore"
+
+[android]
+package_name = "com.skelpo.pry"
+min_sdk = "26"
+target_sdk = "34"
+entry = "src/main_android.ts"
